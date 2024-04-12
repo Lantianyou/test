@@ -9,8 +9,15 @@ import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
+import { sanityClient } from "sanity:client";
 
 const posts = await getCollection("blog");
+
+const sanityPosts = await sanityClient.fetch(
+  `*[_type == "post" && defined(slug)] | order(publishedAt desc)`
+);
+
+posts.push(...sanityPosts);
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);

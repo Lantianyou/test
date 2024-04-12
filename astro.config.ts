@@ -5,6 +5,7 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
+import sanity from "@sanity/astro";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,6 +13,13 @@ export default defineConfig({
   integrations: [
     tailwind({
       applyBaseStyles: false,
+    }),
+    sanity({
+      projectId: "dix3f3aw",
+      dataset: "production",
+      // Set useCdn to false if you're building statically.
+      useCdn: false,
+      studioBasePath: "/admin",
     }),
     react(),
     sitemap(),
