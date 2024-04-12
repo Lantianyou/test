@@ -29,14 +29,6 @@ This theme is self-documented \_ which means articles/posts in this theme can al
 
 _Note: I've tested screen-reader accessibility of AstroPaper using **VoiceOver** on Mac and **TalkBack** on Android. I couldn't test all other screen-readers out there. However, accessibility enhancements in AstroPaper should be working fine on others as well._
 
-## ✅ Lighthouse Score
-
-<p align="center">
-  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fastro-paper.pages.dev%2F&form_factor=desktop">
-    <img width="710" alt="AstroPaper Lighthouse Score" src="AstroPaper-lighthouse-score.svg">
-  <a>
-</p>
-
 ## 🚀 Project Structure
 
 Inside of AstroPaper, you'll see the following folders and files:
@@ -87,41 +79,17 @@ Documentation can be read in two formats\_ _markdown_ & _blog post_.
 
 ## 💻 Tech Stack
 
-**Main Framework** - [Astro](https://astro.build/)  
-**Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
-**Component Framework** - [ReactJS](https://reactjs.org/)  
-**Styling** - [TailwindCSS](https://tailwindcss.com/)  
-**UI/UX** - [Figma](https://figma.com)  
-**Fuzzy Search** - [FuseJS](https://fusejs.io/)  
-**Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)  
-**Code Formatting** - [Prettier](https://prettier.io/)  
-**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
-**Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
+**Main Framework** - [Astro](https://astro.build/)
+**Type Checking** - [TypeScript](https://www.typescriptlang.org/)
+**Component Framework** - [ReactJS](https://reactjs.org/)
+**Styling** - [TailwindCSS](https://tailwindcss.com/)
+**UI/UX** - [Figma](https://figma.com)
+**Fuzzy Search** - [FuseJS](https://fusejs.io/)
+**Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)
+**Code Formatting** - [Prettier](https://prettier.io/)
+**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)
+**Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)
 **Linting** - [ESLint](https://eslint.org)
-
-## 👨🏻‍💻 Running Locally
-
-The easiest way to run this project locally is to run the following command in your desired directory.
-
-```bash
-# npm 6.x
-npm create astro@latest --template satnaing/astro-paper
-
-# npm 7+, extra double-dash is needed:
-npm create astro@latest -- --template satnaing/astro-paper
-
-# yarn
-yarn create astro --template satnaing/astro-paper
-```
-
-## Google Site Verification (optional)
-
-You can easily add your [Google Site Verification HTML tag](https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag) in AstroPaper using environment variable. This step is optional. If you don't add the following env variable, the google-site-verification tag won't appear in the html `<head>` section.
-
-```bash
-# in your environment variable file (.env)
-PUBLIC_GOOGLE_SITE_VERIFICATION=your-google-site-verification-value
-```
 
 ## 🧞 Commands
 
