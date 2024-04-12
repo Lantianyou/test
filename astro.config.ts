@@ -7,9 +7,15 @@ import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import sanity from "@sanity/astro";
 
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
+  output: "server",
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+  }),
   integrations: [
     tailwind({
       applyBaseStyles: false,
