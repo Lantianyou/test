@@ -105,19 +105,19 @@ You can specify and enable certain social links in hero section and footer. To d
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/Lantianyou/test-blog",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
   {
     name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/Lantianyou/test-blog",
     linkTitle: `${SITE.title} on Facebook`,
     active: true,
   },
   {
     name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/Lantianyou/test-blog",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
