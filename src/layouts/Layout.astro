@@ -2,6 +2,7 @@
 import { LOCALE, SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 export interface Props {
   title?: string;
@@ -97,7 +98,7 @@ const socialImageURL = new URL(
       data-website-id="885f9077-15c1-4290-b612-bdcdddfc872b"></script>
 
     <ViewTransitions />
-
+    <SpeedInsights />
     <script is:inline src="/toggle-theme.js"></script>
   </head>
   <body>
